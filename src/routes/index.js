@@ -8,6 +8,11 @@ const routes = [
   },
   {
     exact: true,
+    component: asyncComponentLoader(() => import('pages/Page0')),
+    path: '/page-0',
+  },
+  {
+    exact: true,
     component: asyncComponentLoader(() => import('pages/Page1')),
     path: '/page-1',
   },

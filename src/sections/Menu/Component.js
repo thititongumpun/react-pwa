@@ -48,6 +48,12 @@ function Menu({ isOpen, onClose, onOpen }) {
           </ListItemIcon>
           <ListItemText primary="Welcome" />
         </StyledMenuItem>
+        <StyledMenuItem onClick={onClose} component={RouterLink} to="/page-0">
+          <ListItemIcon>
+            <JSIcon />
+          </ListItemIcon>
+          <ListItemText primary="Page 0" />
+        </StyledMenuItem>
         <StyledMenuItem onClick={onClose} component={RouterLink} to="/page-1">
           <ListItemIcon>
             <JSIcon />
