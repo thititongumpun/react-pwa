@@ -13,6 +13,9 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 
+import { Widget } from 'react-chat-widget';
+import 'react-chat-widget/lib/styles.css';
+
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -112,6 +115,7 @@ export default function SignIn() {
       <Box mt={8}>
         <Copyright />
       </Box>
+      <Widget />
     </Container>
   );
 }
